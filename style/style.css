@@ -1,0 +1,101 @@
+/* Global */
+:root {
+    /* color */
+    --color-background: #f6f6f6;
+    --color-text_light: #ece7e1;
+    --color-text_dark: #333333;
+    --color-button: #1a1818;
+    --color-accent: #546d54;
+}
+
+* {
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+}  
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.app {
+    color: var(--color-text_dark);
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 7px 24px 0px rgba(166,166,166,1);
+    -moz-box-shadow: 6px 7px 24px 0px rgba(166,166,166,1);
+    box-shadow: 6px 7px 24px 0px rgba(166,166,166,1);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color:var(--color-accent);
+    padding: 32px 0;
+}
+
+.banner__title {
+    color: var(--color-text_light);
+    z-index: 01;
+}
+
+.banner__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 0 0 ;
+}
+
+.create-button {
+    color: var(--color-text_light);
+    background-color: var(--color-button);
+    padding: 12px 24px;
+    margin: 0 3px;
+    text-transform: uppercase;
+}
+
+.document {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.document::-webkit-scrollbar {
+    /* Safari and Chrome */
+    background-color: var(--color-accent);
+    width: 6px;
+}
+  
+.document::-webkit-scrollbar-thumb {
+    /* Safari and Chrome */
+    background-color: var(--color-accent);
+
+}
+
+.footer {
+    width: 100%;
+    padding: 12px 0;
+}
