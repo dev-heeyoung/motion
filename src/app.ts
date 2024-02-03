@@ -1,6 +1,7 @@
 import { PageComponent } from './components/page/page.js'
 import { ImageComponent } from './components/page/item/image.js';
 import { NoteComponent } from './components/page/item/note.js';
+import { VideoComponent } from './components/page/item/video.js';
 
 
 class App {
@@ -14,6 +15,9 @@ class App {
 
         const note = new NoteComponent('title', 'body');
         note.attachTo(appRoot, 'beforeend')
+
+        const video = new VideoComponent('video title', 'https://www.youtube.com/watch?v=JP3R00tCL4I&ab_channel=StudySonicFocus')
+        video.attachTo(appRoot, 'beforeend')
     }
 }
 
