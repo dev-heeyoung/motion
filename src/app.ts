@@ -3,6 +3,7 @@ import { ImageComponent } from './components/page/item/image.js';
 import { NoteComponent } from './components/page/item/note.js';
 import { VideoComponent } from './components/page/item/video.js';
 import { Component } from './components/component.js';
+import { InputDialog } from './components/dialog/dialog.js';
 
 
 class App {
@@ -19,6 +20,22 @@ class App {
 
         const video = new VideoComponent('video title', 'https://www.youtube.com/watch?v=JP3R00tCL4I&ab_channel=StudySonicFocus')
         this.page.addChild(video);
+
+        const imageBtn = document.querySelector('#image')! as HTMLButtonElement;
+        imageBtn.addEventListener('click', () => {
+            const dialog = new InputDialog();
+            console.log('open')
+            dialog.setOnCloseListener(() => {
+                dialog.removeFrom(document.body);
+            })
+
+            dialog.setOnSubmitListener(() => {
+                // add submit action
+                dialog.removeFrom(document.body);
+            })
+
+            dialog.attachTo(document.body) 
+        })
     }
 }
 
