@@ -5,11 +5,11 @@ export class MediaInput extends BaseComponent<HTMLElement> {
         super(`
         <div class="media__section">
             <div class="form__container">
-                <label for="title">Title</label>
+                <label for="title" class="title">Title</label>
                 <input type="text" id="title"/>
             </div>
             <div class="form__container">
-                <label for="url">URL</label>
+                <label for="url" class="url">URL</label>
                 <input type="text" id="url"/>
             </div>
         </div>

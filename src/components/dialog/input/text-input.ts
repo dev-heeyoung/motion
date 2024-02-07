@@ -5,11 +5,11 @@ export class TextInput extends BaseComponent<HTMLElement> {
         super(`
         <div class="text__section">
             <div class="form__container">
-                <label for="title">Title</label>
+                <label for="title" class="title">Title</label>
                 <input type="text" id="title"/>
             </div>
             <div class="form__container">
-                <label for="text">Text</label>
+                <label for="text" class="text">Text</label>
                 <textarea rows="3" id="text"/></textarea>
             </div>
         </div>
